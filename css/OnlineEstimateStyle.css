@@ -1,0 +1,420 @@
+/* header */
+
+header {
+    margin-top: 100px;
+    height: 500px;
+    background-color: var(--dark);
+    background-image: url('../Images/33.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: var(--light);
+    border-bottom-style: solid;
+    border-bottom-color: var(--dark);
+    border-bottom-width: 30px;
+}
+
+#transitionBox {
+    height: inherit;
+    width: inherit;
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+#titleBox {
+    padding: 0 30px;
+    height: inherit;
+    width: inherit;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+}
+
+h1 {
+    width: 90%;
+    color: var(--light);
+    font-size: 50px;
+    font-weight: 500;
+    text-align: center;
+}
+
+/* main */
+
+hr {
+    margin: 40px;
+    width: 100%;
+}
+
+.mainBox {
+    height: fit-content;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+}
+
+.mainTextBox {
+    margin: 100px 30px;
+    border-left-style: solid;
+    border-left-color: var(--minty);
+    border-left-width: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    gap: 40px;
+}
+
+.mainTextBox>h2 {
+    padding-left: 20px;
+    color: var(--dark);
+    font-size: 40px;
+    font-weight: 500;
+}
+
+.mainTextBox>p {
+    padding-left: 20px;
+    color: var(--dark);
+    font-size: 20px;
+    font-weight: 100;
+    line-height: 27px;
+}
+
+#mainImg1 {
+    height: 300px;
+    width: 100%;
+    background-image: url('../Images/14.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.dividerBox {
+    padding: 0 30px;
+    height: 300px;
+    box-sizing: border-box;
+    background-color: var(--dark);
+    color: var(--light);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+}
+
+.dividerBox>h2 {
+    font-size: 30px;
+    font-weight: 500;
+    text-align: center;
+}
+
+.dividerBox>a {
+    color: var(--dark-greyish);
+    font-size: 25px;
+    font-weight: 100;
+    text-align: center;
+    transition: color 0.3s cubic-bezier(.71, .42, 0, .94);
+}
+
+.dividerBox>a:hover {
+    color: var(--minty);
+}
+
+#calculator {
+    margin: 50px 0 100px 0;
+    padding: 0 30px;
+    width: 100%;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 15px;
+}
+
+#calculatorTitle {
+    margin: 30px 0;
+    height: fit-content;
+    width: clamp(0%, 80%, 900px);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    align-self: center;
+}
+
+#calculatorTitle>h2 {
+    width: 100%;
+    color: var(--dark);
+    text-align: center;
+    font-size: 40px;
+    font-weight: 500;
+}
+
+#calculatorTitle>p {
+    width: 100%;
+    color: var(--dark);
+    text-align: center;
+    font-size: 20px;
+    font-weight: 100;
+    line-height: 27px;
+}
+
+p#calculatorNote {
+    width: 100%;
+    color: var(--light-greyish);
+    font-style: italic;
+    text-align: center;
+    font-size: 20px;
+    font-weight: 100;
+    line-height: 27px;
+}
+
+.serviceBox {
+    margin: 10px 0;
+    padding: 20px;
+    height: fit-content;
+    background-color: var(--light);
+    box-sizing: border-box;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: left;
+}
+
+.serviceBox>h3 {
+    padding: 5px 0 5px 0;
+    width: 100%;
+    color: var(--dark);
+    font-size: 23px;
+    font-weight: 400;
+    line-height: 27px;
+}
+
+.inputBox {
+    margin-top: 10px;
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    gap: 10px;
+}
+
+.inputNumber {
+    width: clamp(0%, 50%, 250px);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: left;
+    gap: 5px;
+}
+
+.inputSelect {
+    width: clamp(0%, 50%, 250px);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: left;
+    gap: 5px;
+}
+
+label {
+    padding: 5px 0 5px 0;
+    width: 100%;
+    color: var(--dark);
+    font-size: 20px;
+    font-weight: 100;
+    line-height: 27px;
+}
+
+select {
+    margin: 5px 0 5px 0;
+    padding: 10px;
+    height: calc(2em + 4px);
+    width: 100%;
+    font-size: 20px;
+    box-sizing: border-box;
+    box-shadow: none;
+    border: 1px solid var(--light-greyish);
+    border-radius: 5px;
+    transition: all 0.1s linear;
+}
+
+select:focus {
+    border: 2px solid var(--dark-greyish);
+    box-shadow: 0 0 2px 2px var(--light-grey-unsaturated) inset;
+}
+
+input {
+    margin: 5px 0 5px 0;
+    padding: 10px;
+    height: calc(2em + 4px);
+    width: 100%;
+    font-size: 20px;
+    box-sizing: border-box;
+    box-shadow: none;
+    border: 1px solid var(--light-greyish);
+    border-radius: 5px;
+    transition: all 0.1s linear;
+}
+
+input:focus {
+    border: 2px solid var(--dark-greyish);
+    box-shadow: 0 0 2px 2px var(--light-grey-unsaturated) inset;
+}
+
+#calculateBtn {
+    margin: 30px 0;
+    height: 2.5em;
+    width: clamp(200px, 20vw, 350px);
+    background-color: var(--minty);
+    color: var(--light);
+    font-size: clamp(20px, 2vw, 23px);
+    box-sizing: border-box;
+    box-shadow: none;
+    border: 1px solid var(--light-greyish);
+    border-radius: 5px;
+    text-align: center;
+    align-self: center;
+    cursor: pointer;
+    transition: all 0.05s linear;
+}
+
+#calculateBtn:active {
+    background-color: var(--dark-greyish);
+    color: var(--minty);
+    box-shadow: 0 0 2px 2px var(--light-grey-unsaturated);
+}
+
+#totalBox {
+    margin: 10px 0;
+    padding: 20px;
+    height: fit-content;
+    background-color: var(--light);
+    box-sizing: border-box;
+    border-radius: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+#totalBox>h3 {
+    padding: 5px 0 5px 0;
+    width: 100%;
+    color: var(--dark);
+    font-size: 23px;
+    font-weight: 100;
+    line-height: 27px;
+    text-align: center;
+}
+
+#totalBox>p {
+    padding: 5px 0 5px 0;
+    width: 100%;
+    color: var(--dark);
+    font-size: 23px;
+    font-weight: 400;
+    line-height: 27px;
+    text-align: center;
+}
+
+@media screen and (min-width: 1420px) {
+    /* header */
+
+    header {
+        margin-top: 0;
+        height: 600px;
+    }
+
+    h1 {
+        font-size: 75px;
+    }
+
+    /* main */
+
+    .mainBox {
+        flex-direction: row-reverse;
+    }
+
+    .mainTextBox {
+        margin: 150px 100px 150px 50px;
+        width: 70%;
+        display: flex;
+        flex-direction: column;
+        align-items: left;
+        gap: 30px;
+    }
+
+    .mainTextBox>h2 {
+        padding-left: 20px;
+        font-size: 40px;
+        font-weight: 500;
+    }
+
+    .mainTextBox>p {
+        padding-left: 20px;
+        font-size: 25px;
+        font-weight: 100;
+        line-height: 30px;
+    }
+
+    #mainImg1 {
+        height: auto;
+        width: 30%;
+    }
+
+    .dividerBox {
+        padding: 0 100px;
+        height: 500px;
+    }
+
+    .dividerBox>h2 {
+        font-size: 40px;
+        font-weight: 500;
+    }
+
+    .dividerBox>a {
+        font-size: 30px;
+        font-weight: 100;
+    }
+
+    #calculator {
+        margin: 150px 0;
+        padding: 0 100px;
+        width: 100%;
+        gap: 30px;
+    }
+
+    .serviceBox {
+        margin: 10px 0;
+        padding: 30px;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+    }
+
+    .inputBox {
+        margin-top: 0;
+        width: 70%;
+        flex-direction: row;
+        align-items: center;
+        gap: 50px;
+    }
+
+    .inputNumber {
+        gap: 10px;
+    }
+
+    .inputSelect {
+        gap: 10px;
+    }
+
+    #totalBox {
+        padding: 30px 0;
+    }
+}

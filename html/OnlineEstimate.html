@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/AllStyle.css">
+    <link rel="stylesheet" href="../css/OnlineEstimateStyle.css">
+    <script src="../js/copyright.js" defer="true"></script>
+    <script src="../js/OnlineEstimateScript.js" defer="true"></script>
+    <title>Online Estimate</title>
+</head>
+<body>
+    <nav>
+        <a href="HomePage.html">Green Thumb Landscaping</a>
+        <div id="navBar">
+            <div id="navBtnBox">
+                <img src="../Images/navBtn.jpg" alt="Navigation Button Icon" id="navBtn">
+            </div>
+            <div id="navBarLinks">
+                <a href="HomePage.html">Home</a>
+                <a href="Services.html">Services</a>
+                <a href="OnlineEstimate.html">Online Estimate</a>
+                <a href="Testimonials.html">Testimonials</a>
+                <a href="AboutPage.html">About Us</a>
+                <a href="ContactPage.html">Contact</a>
+            </div>
+        </div>
+    </nav>
+    <header>
+        <div id="transitionBox">
+            <div id="titleBox">
+                <h1>Online Estimate</h1>
+            </div>
+        </div>
+    </header>
+    <main>
+        <section class="mainBox">
+            <div class="mainTextBox">
+                <h2>Online Estimate</h2>
+                <p>
+                    Have a landscaping idea but not sure where to start? 
+                    You can get a decent idea of cost from our calculator, just plug in your needs and generate a base price / estimate.
+                </p>
+            </div>
+            <div id="mainImg1"></div>
+        </section>
+        <section class="dividerBox">
+            <h2>Want to see a more organized look at our Services?</h2>
+            <a href="Services.html">Head over to our services page here!</a>
+        </section>
+        <section id="calculator">
+            <div id="calculatorTitle">
+                <h2>Residential Services Price Calculator</h2>
+                <p>
+                    Based off an average yard size of 10000 Square Feet, choose what you need done weekly, monthly or just one time!
+                </p>
+                <p id="calculatorNote">
+                    Empty fields will be set to a value of 0
+                </p>
+                <hr>
+            </div>
+            <div class="serviceBox">
+                <h3>Landscape Maintenance (pruning / weed removal)</h3>
+                <div class="inputBox">
+                    <div class="inputNumber">
+                        <label for="landscapeMaintenanceValue">$10 / Hr</label>
+                        <input type="number" id="landscapeMaintenanceValue">
+                    </div>
+                    <div class="inputSelect">
+                        <label for="landscapeMaintenanceType">Service Type</label>
+                        <select name="Service Type" id="landscapeMaintenanceType">
+                            <option value="monthly">Monthly</option>
+                            <option value="weekly">Weekly</option>
+                            <option value="one-time">One-Time</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+            <div class="serviceBox">
+                <h3>Treatment & fertilization</h3>
+                <div class="inputBox">
+                    <div class="inputNumber">
+                        <label for="treatmentFertilizationValue">$0.003 / Square Foot</label>
+                        <input type="number" id="treatmentFertilizationValue">
+                    </div>
+                    <div class="inputSelect">
+                        <label for="treatmentFertilizationType">Service Type</label>
+                        <select name="Service Type" id="treatmentFertilizationType">
+                            <option value="monthly">Monthly</option>
+                            <option value="weekly">Weekly</option>
+                            <option value="one-time">One-Time</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+            <div class="serviceBox">
+                <h3>Lawn Thatching / clean up</h3>
+                <div class="inputBox">
+                    <div class="inputNumber">
+                        <label for="LawnThatchingValue">$0.004 / Square Foot</label>
+                        <input type="number" min="0" id="LawnThatchingValue">
+                    </div>
+                    <div class="inputSelect">
+                        <label for="LawnThatchingType">Service Type</label>
+                        <select name="Service Type" id="LawnThatchingType">
+                            <option value="monthly">Monthly</option>
+                            <option value="weekly">Weekly</option>
+                            <option value="one-time">One-Time</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+            <div class="serviceBox">
+                <h3>Grass cutting</h3>
+                <div class="inputBox">
+                    <div class="inputNumber">
+                        <label for="grassCuttingValue">$0.004 / Square Foot</label>
+                        <input type="number" id="grassCuttingValue">
+                    </div>
+                    <div class="inputSelect">
+                        <label for="grassCuttingType">Service Type</label>
+                        <select name="Service Type" id="grassCuttingType">
+                            <option value="monthly">Monthly</option>
+                            <option value="weekly">Weekly</option>
+                            <option value="one-time">One-Time</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+            <div class="serviceBox">
+                <h3>Mulching</h3>
+                <div class="inputBox">
+                    <div class="inputNumber">
+                        <label for="mulchingValue">$0.001 / Square Foot</label>
+                        <input type="number" id="mulchingValue">
+                    </div>
+                    <div class="inputSelect">
+                        <label for="mulchingType">Service Type</label>
+                        <select name="Service Type" id="mulchingType">
+                            <option value="monthly">Monthly</option>
+                            <option value="weekly">Weekly</option>
+                            <option value="one-time">One-Time</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+            <div class="serviceBox">
+                <h3>Seeding</h3>
+                <div class="inputBox">
+                    <div class="inputNumber">
+                        <label for="seedingValue">$0.007 / Square Foot</label>
+                        <input type="number" id="seedingValue">
+                    </div>
+                    <div class="inputSelect">
+                        <label for="seedingType">Service Type</label>
+                        <select name="Service Type" id="seedingType">
+                            <option value="monthly">Monthly</option>
+                            <option value="weekly">Weekly</option>
+                            <option value="one-time">One-Time</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+            <div class="serviceBox">
+                <h3>Aeration</h3>
+                <div class="inputBox">
+                    <div class="inputNumber">
+                        <label for="aerationValue">$0.003 / Square Foot</label>
+                        <input type="number" id="aerationValue">
+                    </div>
+                    <div class="inputSelect">
+                        <label for="aerationType">Service Type</label>
+                        <select name="Service Type" id="aerationType">
+                            <option value="monthly">Monthly</option>
+                            <option value="weekly">Weekly</option>
+                            <option value="one-time">One-Time</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+            <div class="serviceBox">
+                <h3>Tree-health inspections</h3>
+                <div class="inputBox">
+                    <div class="inputNumber">
+                        <label for="treeHealthValue">$5 / Tree</label>
+                        <input type="number" id="treeHealthValue">
+                    </div>
+                    <div class="inputSelect">
+                        <label for="treeHealthType">Service Type</label>
+                        <select name="Service Type" id="treeHealthType">
+                            <option value="monthly">Monthly</option>
+                            <option value="weekly">Weekly</option>
+                            <option value="one-time">One-Time</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+            <div class="serviceBox">
+                <h3>Tree trimming</h3>
+                <div class="inputBox">
+                    <div class="inputNumber">
+                        <label for="treeTrimmingValue">$40 / Tree</label>
+                        <input type="number" id="treeTrimmingValue">
+                    </div>
+                    <div class="inputSelect">
+                        <label for="treeTrimmingType">Service Type</label>
+                        <select name="Service Type" id="treeTrimmingType">
+                            <option value="monthly">Monthly</option>
+                            <option value="weekly">Weekly</option>
+                            <option value="one-time">One-Time</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+            <div class="serviceBox">
+                <h3>Shrub pruning</h3>
+                <div class="inputBox">
+                    <div class="inputNumber">
+                        <label for="shrubPruningValue">$10 / Hr</label>
+                        <input type="number" id="shrubPruningValue">
+                    </div>
+                    <div class="inputSelect">
+                        <label for="shrubPruningType">Service Type</label>
+                        <select name="Service Type" id="shrubPruningType">
+                            <option value="monthly">Monthly</option>
+                            <option value="weekly">Weekly</option>
+                            <option value="one-time">One-Time</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+            <div class="serviceBox">
+                <h3>Weed management</h3>
+                <div class="inputBox">
+                    <div class="inputNumber">
+                        <label for="weedManagementValue">$10 / Hr</label>
+                        <input type="number" id="weedManagementValue">
+                    </div>
+                    <div class="inputSelect">
+                        <label for="weedManagementType">Service Type</label>
+                        <select name="Service Type" id="weedManagementType">
+                            <option value="monthly">Monthly</option>
+                            <option value="weekly">Weekly</option>
+                            <option value="one-time">One-Time</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+            <div class="serviceBox">
+                <h3>Tree removal</h3>
+                <div class="inputBox">
+                    <div class="inputNumber">
+                        <label for="treeRemovalValue">$80 / Tree</label>
+                        <input type="number" id="treeRemovalValue">
+                    </div>
+                    <div class="inputSelect">
+                        <label for="treeRemovalType">Service Type</label>
+                        <select name="Service Type" id="treeRemovalType">
+                            <option value="monthly">Monthly</option>
+                            <option value="weekly">Weekly</option>
+                            <option value="one-time">One-Time</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+            <button id="calculateBtn">Calculate Total</button>
+            <div id="totalBox">
+                <h3>Total</h3>
+                <p>Weekly Total: <span class="calculatorOutput">0$</span></p>
+                <p>Monthly Total: <span class="calculatorOutput">0$</span></p>
+                <p>Yearly Total: <span class="calculatorOutput">0$</span></p>
+                <p>One-Time Total: <span class="calculatorOutput">0$</span></p>
+                <p>Yearly Total + One-Time services: <span class="calculatorOutput">0$</span></p>
+            </div>
+        </section>
+        <section class="dividerBox">
+            <h2>Ready to request a service?</h2>
+            <a href="ContactPage.html">Find our contact information here!</a>
+        </section>
+    </main>
+    <footer>
+        <div id="footerContent">
+            <div id="footerTitle">
+                <h2>Green Thumb Landscaping</h2>
+                <p>Creating landscapes that stand the test of time</p>
+            </div>
+            <div id="linksContactBox">
+                <div id="footerLinks">
+                    <h2>links</h2>
+                    <div>
+                        <a href="HomePage.html">Home</a>
+                        <a href="Services.html">Services</a>
+                        <a href="OnlineEstimate.html">Online Estimate</a>
+                        <a href="Testimonials.html">Testimonials</a>
+                        <a href="AboutPage.html">About Us</a>
+                        <a href="ContactPage.html">Contact</a>
+                    </div>
+                </div>
+                <div id="footerContact">
+                    <h2>Contact</h2>
+                    <p>
+                        22 1139 AVE NW<br>
+                        EDMONTON AB T5M 2N0<br>
+                    </p>
+                    <p>
+                        info@greenthumblanscaping.com
+                    </p>
+                    <p>
+                        780.302.0635
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div id="copyrightBox">
+            <p>Copyright © <span id="copyrightDate"></span></p>
+        </div>
+    </footer>
+</body>
+</html>

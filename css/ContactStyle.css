@@ -1,0 +1,156 @@
+/* header */
+
+header {
+    margin-top: 100px;
+    height: 500px;
+    background-color: var(--dark);
+    background-image: url('../Images/mowed_lawn.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: var(--light);
+    border-bottom-style: solid;
+    border-bottom-color: var(--dark);
+    border-bottom-width: 30px;
+}
+
+#transitionBox {
+    height: inherit;
+    width: inherit;
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+#titleBox {
+    padding: 0 30px;
+    height: inherit;
+    width: inherit;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+}
+
+h1 {
+    width: 90%;
+    color: var(--light);
+    font-size: 50px;
+    font-weight: 500;
+    text-align: center;
+}
+
+/* main */
+
+.mainBox {
+    height: fit-content;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+}
+
+.mainTextBox {
+    margin: 100px 30px;
+    border-right-style: solid;
+    border-right-color: var(--minty);
+    border-right-width: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    gap: 40px;
+}
+
+.mainTextBox>h2 {
+    padding-right: 30px;
+    width: fit-content;
+    color: var(--dark);
+    font-size: 40px;
+    font-weight: 500;
+}
+
+.mainTextBox>p {
+    width: 90%;
+    color: var(--dark);
+    font-size: 20px;
+    font-weight: 100;
+    line-height: 35px;
+}
+
+#imgCollageBox {
+    padding: 30px 30px;
+    height: 750px;
+    width: 100%;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 10px 10px;
+}
+
+#imgCollageBox>div {
+    height: calc(50% - 20px);
+    width: calc(50% - 20px);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#imgCollage1 {
+    background-image: url('../Images/wheelbarow_backyard_2.jpg');
+}
+
+#imgCollage2 {
+    background-image: url('../Images/pruning_tree_3.jpg');
+}
+
+#imgCollage3 {
+    background-image: url('../Images/nice_backyard_2.jpg');
+}
+
+#imgCollage4 {
+    background-image: url('../Images/pruning_tree.jpg');
+}
+
+@media screen and (min-width: 1420px) {
+    /* header */
+
+    header {
+        margin-top: 0;
+        height: 600px;
+    }
+
+    h1 {
+        font-size: 75px;
+    }
+
+    /* main */
+
+    .mainBox {
+        flex-direction: row;
+    }
+    
+    .mainTextBox {
+        margin: 150px 0 150px 100px;
+        width: calc(200% / 5);
+        gap: 40px;
+    }
+    
+    .mainTextBox>h2 {
+        font-size: 40px;
+        font-weight: 500;
+    }
+    
+    .mainTextBox>ul>li {
+        color: var(--dark);
+        font-size: 20px;
+        font-weight: 100;
+        line-height: 35px;
+    }
+    
+    #imgCollageBox {
+        padding: 150px 100px;
+        height: auto;
+        width: calc(300% / 5);
+    }
+}
